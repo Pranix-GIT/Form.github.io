@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>FillUp Form</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="script.js">
   <title>Document</title>
 </head>
 <body>
-  <form>
+  <form onsubmit="myfunc(event)">
     <h1>FillUp Form </h1>
     Name: <input type="text" id="name"><br><br>
     Email: <input type="email" id="email"><br><br>
     Password: <input type="password" id="pass"><br><br>
-    Confirm Password: <input type="password" id="c_pass"><br><br>
+    Date: <input type="datetime" id="date"><br><br>
     Gender : &nbsp;Male&nbsp;&nbsp;<input type="radio" value="male" name="gender"><br>&
     Female&nbsp;<input type="radio" value="female" name="gender"><br><br>
-    Country: <select id="country">Nepal</select>
+    Country: <select id="country"></select>
     <option value="USA">USA</option>
-    <option value="UK">UK</option>
+    <option value="UK">Nepal</option>
     <br><br>
     Hobbies: <input type="checkbox" name="hobby" value="Reading"> Reading<br>
     <input type="checkbox" name="hobby" value="Coding"> Coding<br>
